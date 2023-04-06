@@ -1,9 +1,53 @@
-*{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  background-color: #d955d7;
+  background-color: black;
+  overflow: hidden;
 }
+
+/*Rain start */
+
+
+i {
+  height: 200px;
+  background-image: linear-gradient(transparent, white);
+  position: absolute;
+  animation: anima 2s;
+  animation-iteration-count: infinite;
+}
+
+i:nth-child(3n+1) {
+  background-image: linear-gradient(transparent, #25bdc2);
+}
+
+i:nth-child(3n+2) {
+  background-image: linear-gradient(transparent, #9d25c2);
+}
+
+i:nth-child(3n+4) {
+  background-image: linear-gradient(transparent, #c2253a);
+}
+
+i:nth-child(3n+5) {
+  background-image: linear-gradient(transparent, #86c225);
+}
+
+@keyframes anima {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+
+/* Rain ends */
 
 /* Main div containing tress and faces START*/
 
